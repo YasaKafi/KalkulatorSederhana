@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="173dp"
+        android:layout_height="193dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="12pt"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:background="@drawable/edit_text_border"
+        android:layout_margin="8dp"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textPassword"
+        android:layout_margin="8dp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="@color/teal_700"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tidak punya akun? daftar disni"/>
+
+</LinearLayout>

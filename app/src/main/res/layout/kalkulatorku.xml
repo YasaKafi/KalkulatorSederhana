@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDDDC2"
+    tools:context=".Kalkulator">
+
+    <ImageView
+        android:scaleType="fitStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fixheader" />
+
+    <EditText
+        android:id="@+id/txtangka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:hint="Angka 1"
+        android:inputType="number"
+        android:background="@drawable/background_edit_text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtangka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:background="@drawable/background_edit_text"
+        android:paddingLeft="20dp"
+        android:hint="Angka 2"
+        android:minHeight="48dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btntambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="#026E47"
+            android:text="+"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/btnkurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:text="-"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnkali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="40dp"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="20dp"
+            android:text="×" />
+
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="40dp"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="20dp"
+            android:text="÷" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
