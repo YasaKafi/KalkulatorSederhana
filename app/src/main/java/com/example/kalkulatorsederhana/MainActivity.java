@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 editor.apply();
 
                 new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("Sukses")
-                        .setMessage("Login Sukses")
+                        .setTitle("Login Sukses")
+                        .setMessage("Click OK to page Calculator")
 
                         .setPositiveButton(android.R.string.yes, (dialog, which) -> startActivity(new Intent(MainActivity.this, Kalkulator.class)))
 
